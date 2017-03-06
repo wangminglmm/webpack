@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><%= htmlWebpackPlugin.options.title %></title>
+		<h1>webpack项目</h1>
+	</head>
+	<body>
+		<h1><%= htmlWebpackPlugin.options.data %></h1>
+		<% var i = 0;%>	
+		<% for(var k in htmlWebpackPlugin.files){%>
+			<%= i++ %><%=k %>:<%= JSON.stringify(htmlWebpackPlugin.files[k]) %>
+		<% } %>
+		<% for (var k in htmlWebpackPlugin.options ){ %>
+			<h2><%= k %>:<%= htmlWebpackPlugin.options[k] %></h2>
+		<% } %>
+	</body>
+</html>

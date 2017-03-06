@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><%= htmlWebpackPlugin.options.title %></title>
+		<h1>webpack项目</h1>
+		<script src="<%= htmlWebpackPlugin.files.chunks.main.entry%>" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script src="<%= htmlWebpackPlugin.files.chunks.a.entry%>" type="text/javascript" charset="utf-8"></script>
+		<!--我是一行注释-->
+	</body>
+</html>

@@ -1,0 +1,15 @@
+@import "./flex.css";
+html,body{
+	margin: 0;
+	padding: 0;
+	background: green;
+}
+ul>li{
+	list-style: none;
+}
+
+.flex{
+	display: flex;
+	transform: translateX('180px');
+	/*我是css里面的*/
+}
